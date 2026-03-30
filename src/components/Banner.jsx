@@ -12,7 +12,7 @@ const Banner = () => {
                     <h1 className='text-3xl md:text-5xl lg:text-6xl font-extrabold lg:leading-18 pb-5'>Supercharge Your Digital Workflow</h1>
                     <p className='pb-5 text-gray-500 max-w-130'>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.</p>
                     <div className='flex items-center gap-3'>
-                         <button className='btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white rounded-full'>Explore Products</button>
+                         <button className='btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white rounded-full'><a href="#products">Explore Products</a></button>
                          <button className='flex gap-2 btn bg-white rounded-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent font-semibold border border-[#9514FA]'><img src="Play.png" />Live Demo</button>
                     </div>
                </div>

@@ -7,6 +7,9 @@ import Status from './components/Status'
 import { ToastContainer } from 'react-toastify'
 import Cart from './components/Cart'
 import Steps from './components/Steps'
+import Pricing from './components/Pricing'
+import Workflow from './components/Workflow'
+import Footer from './components/Footer'
 
 const productPromise = fetch("produci.json")
   .then(res=> res.json())
@@ -30,10 +33,10 @@ function App() {
         <Status></Status>
       </section>
 
-      <section>
+      <section id="products" className='px-5 lg:px-0'>
       <div className='text-center space-y-3 mb-8'>
-        <h1 className='text-4xl font-extrabold'>Premium Digital Tools</h1>
-        <p className='max-w-135 mx-auto text-gray-500'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+        <h1 className='text-3xl md:text-4xl font-extrabold'>Premium Digital Tools</h1>
+        <p className='max-w-135 mx-auto text-gray-500 text-sm md:text-md'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
       </div>
 
       {/* name of each tab group should be unique */}
@@ -52,6 +55,14 @@ function App() {
       
       <Steps></Steps>
        
+      <section id="price">
+        <Pricing></Pricing>
+      </section>
+      
+      <Workflow></Workflow>
+
+      <Footer></Footer>
+
       <ToastContainer></ToastContainer>
     </>
   )
