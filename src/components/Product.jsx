@@ -3,7 +3,12 @@ import { toast } from 'react-toastify';
 
 const Product = ({ product,selected,setSelected }) => {
      const [buy,setBuy]=useState(false)
-     const handleBuy=()=>{
+     const handleBuy = () => {
+          const isExist = selected.find(s => s.id === product.id);
+          if (isExist){
+               toast.warning("This item is already in your cart");
+               return;
+          }
           setBuy(true);
           toast.success("Successfully added to cart!")
           setSelected([...selected,product])
