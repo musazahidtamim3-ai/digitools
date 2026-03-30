@@ -6,6 +6,7 @@ import Products from './components/Products'
 import Status from './components/Status'
 import { ToastContainer } from 'react-toastify'
 import Cart from './components/Cart'
+import Steps from './components/Steps'
 
 const productPromise = fetch("produci.json")
   .then(res=> res.json())
@@ -47,7 +48,10 @@ function App() {
         </Suspense>
       </section>
 
-      {active==="cart" && <Cart selected={selected} setSelected={setSelected}></Cart>}
+      {active === "cart" && <Cart selected={selected} setSelected={setSelected}></Cart>}
+      
+      <Steps></Steps>
+       
       <ToastContainer></ToastContainer>
     </>
   )
