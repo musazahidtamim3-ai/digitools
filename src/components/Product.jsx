@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const Product = ({ product }) => {
+const Product = ({ product,selected,setSelected }) => {
      const [buy,setBuy]=useState(false)
      const handleBuy=()=>{
           setBuy(true);
           toast.success("Successfully added to cart!")
+          setSelected([...selected,product])
      }
      return (
           <div className="card bg-base-100 border border-gray-200 shadow-sm">
