@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar></Navbar>
+        <Navbar selected={selected}></Navbar>
       </header>
 
       <section>
@@ -38,7 +38,7 @@ function App() {
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box bg-white justify-center mb-8">
           <input onClick={() => setActive("products")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "products" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white"}`} aria-label="Products" defaultChecked/>
-          <input onClick={() => setActive("cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "cart" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white"}`} aria-label="Cart" />
+          <input onClick={() => setActive("cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "cart" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white"}`} aria-label={`Cart (${selected.length})`} />
       </div>
 
       
@@ -47,7 +47,7 @@ function App() {
         </Suspense>
       </section>
 
-      {active==="cart" && <Cart selected={selected}></Cart>}
+      {active==="cart" && <Cart selected={selected} setSelected={setSelected}></Cart>}
       <ToastContainer></ToastContainer>
     </>
   )
