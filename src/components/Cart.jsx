@@ -13,7 +13,7 @@ const Cart = ({ selected,setSelected }) => {
           toast.error("Item deleted from cart")
      }
      return (
-          <div className='max-w-280 mx-auto border border-gray-200 p-5 mb-8'>
+          <div id="cart" className='max-w-280 mx-auto border border-gray-200 p-5 mb-8'>
                <h1 className='text-xl font-bold'>Your Cart</h1>
                {
                     selected.length === 0 ? <p className='text-2xl font-extrabold bg-linear-to-r from-[#9514FA] to-[#4F39F6] mt-5 text-white rounded-xl text-center py-6'>Your Cart is empty !!!</p> : <div className='space-y-3 mt-5'>

@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className='sticky top-0 z-50'>
         <Navbar selected={selected}></Navbar>
       </header>
 
