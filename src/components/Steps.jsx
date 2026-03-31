@@ -4,7 +4,7 @@ const Steps = () => {
      return (
           <div className='max-w-280 mx-auto my-30 px-5 lg:px-0'>
                <div className='text-center space-y-3'>
-                    <h1 className='text-3xl md:text-5xl font-extrabold'>Get Started in 3 Steps</h1>
+                    <h1 className='text-3xl md:text-5xl font-bold'>Get Started in <span className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent'>3 Steps</span></h1>
                     <p className='max-w-135 mx-auto text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
                </div> 
                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
@@ -14,7 +14,7 @@ const Steps = () => {
                          </div>
                          <div className='flex justify-center items-center h-30'>
                               <div className='bg-linear-to-r from-[#f0e4fa] to-[#e4e2f4] rounded-full p-4'>
-                                   <img  src="/public/user.png" alt="" />
+                                   <img  src="/user.png" alt="" />
                               </div>
                          </div>
                          <h3 className='text-center text-xl font-bold pt-3'>Create Account</h3>
@@ -26,7 +26,7 @@ const Steps = () => {
                          </div>
                          <div className='flex justify-center items-center h-30'>
                               <div className='bg-linear-to-r from-[#f0e4fa] to-[#e4e2f4] rounded-full p-4'>
-                                   <img src="/public/package.png" alt="" />
+                                   <img src="/package.png" alt="" />
                               </div>
                          </div>
                          <h3 className='text-center text-xl font-bold pt-3'>Choose Products</h3>
@@ -38,7 +38,7 @@ const Steps = () => {
                          </div>
                          <div className='flex justify-center items-center h-30'>
                               <div className='bg-linear-to-r from-[#f0e4fa] to-[#e4e2f4] rounded-full p-4'>
-                                   <img src="/public/rocket.png" alt="" /> 
+                                   <img src="/rocket.png" alt="" /> 
                               </div>
                          </div>
                          <h3 className='text-center text-xl font-bold pt-3'>Start Creating</h3>

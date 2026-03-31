@@ -53,6 +53,15 @@ const Footer = () => {
                               </div>
                          </div>
                     </div>
+                    <hr className='border border-gray-800 mt-8' />
+                    <div className='text-gray-400 flex flex-col lg:flex-row items-center justify-between lg:justify-between pt-5'>
+                         <p className='pb-3 lg:pb-0'>© 2026 Digitools. All rights reserved.</p>
+                         <ul className='flex flex-col lg:flex-row items-center gap-2 lg:gap-4'>
+                              <li>Privacy Policy</li>
+                              <li>Terms of Service</li>
+                              <li>Cookies</li>
+                         </ul>
+                    </div>
                </div>
           </div>
      );

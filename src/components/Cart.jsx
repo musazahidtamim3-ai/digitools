@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCartShopping } from 'react-icons/fa6';
 import { toast } from 'react-toastify';
 
 const Cart = ({ selected,setSelected }) => {
@@ -14,10 +15,10 @@ const Cart = ({ selected,setSelected }) => {
      }
      return (
           <div className='px-5 lg:px-0'>
-               <div id="cart" className='max-w-280 mx-auto border border-gray-200 p-5 mb-8'>
+               <div id="cart" className='max-w-280 mx-auto border border-gray-200 shadow-md rounded-xl p-5 mb-8'>
                     <h1 className='text-xl font-bold'>Your Cart</h1>
                     {
-                         selected.length === 0 ? <p className='text-2xl font-extrabold bg-linear-to-r from-[#9514FA] to-[#4F39F6] mt-5 text-white rounded-xl text-center py-6'>Your Cart is empty !!!</p> : <div className='space-y-3 mt-5'>
+                         selected.length === 0 ? <div className='space-y-2 mt-5 py-20'><div className='flex justify-center'><FaCartShopping className='w-20 h-20 text-gray-400'></FaCartShopping></div><p className='text-2xl font-bold text-gray-400 rounded-xl text-center pt-4'>Your Cart is empty !!!</p></div> : <div className='space-y-3 mt-5'>
                               {
                                    selected.map(item => (
                                         <div className='bg-gray-100 rounded-xl px-5 py-3 flex justify-between items-center'>
@@ -26,8 +27,8 @@ const Cart = ({ selected,setSelected }) => {
                                                        <img src={item.icon} alt="" />
                                                   </div>
                                                   <div>
-                                                       <h3 className='text-lg font-semibold pb-1'>{item.name}</h3>
-                                                       <p className='text-gray-500'>${item.price}</p>
+                                                       <h3 className='text-md md:text-lg font-semibold pb-1'>{item.name}</h3>
+                                                       <p className='text-gray-500 text-sm md:text-md'>${item.price}</p>
                                                   </div>
                                              </div>
                                              <div>

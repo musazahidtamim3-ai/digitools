@@ -8,8 +8,8 @@ const Workflow = () => {
                          <h1 className='text-3xl font-bold'>Ready to Transform Your Workflow?</h1>
                          <p className='text-gray-200 max-w-150 mx-auto text-sm md:text-md'>Join thousands of professionals who are already using Digitools to work smarter. Start your free trial today.</p>
                          <div className='flex gap-4 justify-center pt-2'>
-                              <button className='btn rounded-full bg-white text-purple-600'><a href="#products">Explore Products</a></button>
-                              <button className='btn rounded-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] border border-white text-white'><a href="#price">View Pricing</a></button>
+                              <button className='btn rounded-full bg-white hover:bg-base-300  text-purple-600'><a href="#products">Explore Products</a></button>
+                              <button className='btn rounded-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686] border border-white text-white'><a href="#price">View Pricing</a></button>
                          </div>
                          <div className='flex gap-2 justify-center items-center text-gray-200 text-sm md:text-md pt-2'>
                               <p>14-free-trial</p>

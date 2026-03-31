@@ -6,13 +6,13 @@
           "price": 29,
           "period": "Mo",
           "tag": "Free",
-          "tagType": "best-seller",
+          "tagType": "Best-seller",
           "features": [
                "Unlimited AI generations",
                "50+ writing templates",
                "Grammar checker"
           ],
-          "icon": "/public/products/writing_2327400 1.png"
+          "icon": "/products/writing_2327400_1.png"
      },
      {
           "id": "P-102",
@@ -21,13 +21,13 @@
           "price": 49,
           "period": "One-time",
           "tag": "Popular",
-          "tagType": "popular",
+          "tagType": "Popular",
           "features": [
                "2000+ templates",
                "Monthly updates",
                "Commercial license"
           ],
-          "icon": "/public/products/design-tool.png"
+          "icon": "/products/design-tool.png"
      },
      {
           "id": "P-103",
@@ -35,14 +35,14 @@
           "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
           "price": 19,
           "period": "Mo",
-          "tag": "Best Value",
-          "tagType": "new",
+          "tag": "new",
+          "tagType": "New",
           "features": [
                "10M+ assets",
                "Commercial use",
                "No attribution"
           ],
-          "icon": "/public/products/camera_8775444 1.png"
+          "icon": "/products/camera_8775444_1.png"
      },
      {
           "id": "P-104",
@@ -50,14 +50,14 @@
           "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
           "price": 79,
           "period": "Mo",
-          "tag": "popular",
-          "tagType": "popular",
+          "tag": "Popular",
+          "tagType": "Popular",
           "features": [
                "50+ automations",
                "API access",
                "Custom workflows"
           ],
-          "icon": "/public/products/operation.png"
+          "icon": "/products/operation.png"
      },
      {
           "id": "P-105",
@@ -65,14 +65,14 @@
           "description": "Create professional resumes and cover letters that land interviews.",
           "price": 15,
           "period": "One-time",
-          "tag": "new",
-          "tagType": "new",
+          "tag": "New",
+          "tagType": "New",
           "features": [
                "100+ templates",
                "ATS optimization",
                "Export to PDF"
           ],
-          "icon": "/public/products/portfolio.png"
+          "icon": "/products/portfolio.png"
      },
      {
           "id": "P-106",
@@ -80,13 +80,13 @@
           "description": "Complete toolkit for creating engaging social media content across all platforms.",
           "price": 39,
           "period": "Mo",
-          "tag": "best-seller",
-          "tagType": "best-seller",
+          "tag": "Best Seller",
+          "tagType": "Best-seller",
           "features": [
                "5000+ assets",
                "Scheduler included",
                "Analytics dashboard"
           ],
-          "icon": "/public/products/social-media.png"
+          "icon": "/products/social-media.png"
      }
 ]

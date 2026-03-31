@@ -35,14 +35,14 @@ function App() {
 
       <section id="products" className='px-5 lg:px-0'>
       <div className='text-center space-y-3 mb-8'>
-        <h1 className='text-3xl md:text-4xl font-extrabold'>Premium Digital Tools</h1>
+          <h1 className='text-3xl md:text-5xl font-bold'>Premium Digital <span className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent'>Tools</span></h1>
         <p className='max-w-135 mx-auto text-gray-500 text-sm md:text-md'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
       </div>
 
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box bg-white justify-center mb-8">
-          <input onClick={() => setActive("products")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "products" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white"}`} aria-label="Products" defaultChecked/>
-          <input onClick={() => setActive("cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "cart" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white"}`} aria-label={`Cart (${selected.length})`} />
+          <input onClick={() => setActive("products")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "products" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686] text-white"}`} aria-label="Products" defaultChecked/>
+          <input onClick={() => setActive("cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full font-semibold ${active === "cart" && "bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686] text-white"}`} aria-label={`Cart (${selected.length})`} />
       </div>
 
       

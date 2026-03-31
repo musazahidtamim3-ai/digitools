@@ -17,7 +17,7 @@ const Product = ({ product,selected,setSelected }) => {
           <div className="card bg-base-100 border border-gray-200 shadow-sm">
                <div className="card-body">
                     <div className='flex justify-end'>
-                         <span className={`px-3 py-1 rounded-full text-center ${product.tagType === "best-seller" ? "bg-[#fce28f64] text-[#f98806] " : product.tagType === "new" ? "bg-[#f0c9fa88] text-[#c705f8]" : "bg-[#b4f9b7] text-[#03ad0c]"}`}>{product.tagType}</span>
+                         <span className={`px-3 py-1 rounded-full text-center ${product.tagType === "Best-seller" ? "bg-[#fce28f64] text-[#f98806] " : product.tagType === "New" ? "bg-[#f0c9fa88] text-[#c705f8]" : "bg-[#b4f9b7] text-[#03ad0c]"}`}>{product.tagType}</span>
                     </div>
                     <div className='pb-2'>
                          <img src={product.icon} alt="" />
@@ -43,7 +43,7 @@ const Product = ({ product,selected,setSelected }) => {
    
                     </ul>
                     <div className="mt-6">
-                         <button onClick={handleBuy} className="btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] rounded-full border-none w-full text-white">{buy ?'Added to cart':'Buy Now'}</button>
+                         <button onClick={handleBuy} className={`btn ${buy ? "bg-linear-to-r from-[#4dd702] to-[#1ce00b]" : "bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686]"} rounded-full border-none w-full text-white`}>{buy ?'Added to cart':'Buy Now'}</button>
                     </div>
                </div>
           </div>

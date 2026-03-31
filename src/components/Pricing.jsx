@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import { toast } from 'react-toastify';
-
-const Pricing = () => {
-     const [active,setActive]=useState("pro")
+;const Pricing = () => {
      return (
           <div className='max-w-280 mx-auto my-30 px-5 lg:px-0'>
                <div className='text-center space-y-3'>
-                    <h1 className='text-3xl md:text-5xl font-extrabold'>Simple, Transparent Pricing</h1>
+                    <h1 className='text-3xl md:text-5xl font-bold'>Simple, Transparent <span className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent'>Pricing</span> </h1>
                     <p className='max-w-135 mx-auto text-gray-500 text-sm md:text-md'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                </div>
                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 mt-10 '>
@@ -37,7 +33,7 @@ const Pricing = () => {
                                    </li>
                               </ul>
                               <div className="mt-3">
-                                   <button onClick={() => { setActive("starter");toast.success("Subscribed Successfully!") }} className="btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white w-full rounded-full">{active==="starter" ? "Subscribed" : "Subscribe"}</button>
+                                   <button className="btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686] text-white w-full rounded-full">Subscribe</button>
                               </div>
                          </div>
                     </div>
@@ -76,7 +72,7 @@ const Pricing = () => {
                                    </li>
                               </ul>
                               <div className="mt-3">
-                                   <button onClick={() => { setActive("pro"); toast.success("Pro Trial Started Successfully!") }} className="btn bg-white border-none w-full rounded-full"><a className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent'>{active === "pro" ? "Pro Trial Started" :"Start pro trial"}</a></button>
+                                   <button className="btn bg-white hover:bg-base-300 border-none w-full rounded-full"><a className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent'>Start Pro Trial</a></button>
                               </div>
                          </div>
                          <div className='absolute -top-4 left-1/2 -translate-x-1/2'>
@@ -119,7 +115,7 @@ const Pricing = () => {
                                    </li>
                               </ul>
                               <div className="mt-3">
-                                   <button onClick={() => { setActive("enterprice"); toast.success("You will be able to contact sales soon!") }} className="btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] text-white w-full rounded-full">{active === "enterprice" ? "Will be contact soon" : 'Contact Sales'}</button>
+                                   <button className="btn bg-linear-to-r from-[#9514FA] to-[#4F39F6] hover:from-[#9614fa92] hover:to-[#4f39f686] text-white w-full rounded-full">Contact Sales</button>
                               </div>
                          </div>
                     </div>
