@@ -1,16 +1,21 @@
-# React + Vite
+## :rocket: Project Name :  Digitools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✍️ Description :
 
-Currently, two official plugins are available:
+This is a curated digital marketplace that offers premium AI-powered writing tools, design templates, and automation kits through a modern, responsive interface. It features a dynamic pricing system and a seamless "Add to Cart" experience, designed to help creators and professionals scale their productivity with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚙️ Technology that I used :
 
-## React Compiler
+1) React.js : For building a fast,component-based modular UI.
+2) Tailwind CSS, DaisyUI : To craft a pixel-perfect and modern utility classes and for elegant,pre-designed components that keep the design language consistant.
+3) JavaScript (ES6+) : For writting code smartly and make the code cleaner.
+4) React-Toastify (NPM Package) : For alert by clicking buy now, proceed checkout and delete product.
+5) JSON (for product data) : For show data dynimically.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟Top-3 Features :
 
-## Expanding the ESLint configuration
+1) By clicking Cart, the cart section will be shown. By default it will show an empty message.
+By Clicking Product, the Products section will be shown.
+2) Used react toastify to show all the alerts of add to cart, remove, and proceed to checkout.
+3) On Click Remove Button product will remove from cart section and Proceed to checkout button will remove all the products from the cart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
